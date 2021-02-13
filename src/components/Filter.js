@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-
-export default class Filter extends Component {
+class Filter extends Component {
   render() {
     return (
       <div className="filter">
@@ -15,7 +14,7 @@ export default class Filter extends Component {
         </div>
         <div className="filter-size">
           Filter
-          <select value={this.props.size} onChange={this.props.filterProducts} >
+          <select value={this.props.size} onChange={this.props.filterProducts}>
             <option value="">All</option>
             <option value="XS">XS</option>
             <option value="S">S</option>
@@ -29,3 +28,4 @@ export default class Filter extends Component {
     );
   }
 }
+export default Filter
